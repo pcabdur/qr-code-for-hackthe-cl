@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Scanner</h1>
+        <div class="input-section">
+            <label for="url-input">Enter URL or Upload QR Code:</label>
+            <input type="text" id="url-input" placeholder="e.g., https://google.com">
+            <input type="file" id="qr-upload" accept="image/*">
+            <button onclick="scanUrl()">Scan</button>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qr-scanner/1.4.2/qr-scanner.legacy.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
