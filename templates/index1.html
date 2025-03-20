@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="/static/style2.css"> <!-- Changed to style2.css -->
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Scanner</h1>
+        <div class="input-section">
+            <label for="url-input">Enter URL, Upload QR Code, or Scan with Camera:</label>
+            <input type="text" id="url-input" placeholder="e.g., https://google.com">
+            <input type="file" id="qr-upload" accept="image/*">
+            <button onclick="scanUrl()">Scan</button>
+            <button id="start-camera" onclick="toggleCamera()">Start Camera</button>
+        </div>
+        <div class="video-section">
+            <video id="qr-video" muted playsinline></video>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="/static/qr-scanner.min.js"></script>
+    <script src="/static/script1.js"></script> <!-- Changed to script1.js -->
+</body>
+</html>
