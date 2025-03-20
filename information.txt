@@ -1,0 +1,12 @@
+qr-code-scanner/
+├── static/
+│   ├── script.js       # Your existing JS file
+│   ├── style.css      # Your existing CSS file
+│   └── qr-scanner.min.js  # Downloaded from CDN
+├── templates/
+│   └── index.html     # Your existing HTML file
+├── .ebignore          # To exclude unnecessary files
+├── application.py     # Renamed from app.py (Elastic Beanstalk convention)
+├── requirements.txt   # Python dependencies
+└── .elasticbeanstalk/
+    └── config.yml     # Optional EB config
